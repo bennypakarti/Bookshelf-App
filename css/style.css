@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Roboto:ital,wght@0,500;0,700;0,900;1,900&display=swap');
+
+* {
+	font-family: 'Otomanopee One', sans-serif;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+}
+
+header {
+    widht: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/alfons-morales-YLSwjSy7stw-unsplash.png);
+}
+
+.header-content {
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+.header-content  a{
+    text-decoration: none;
+}
+
+.welcome-content{
+    margin-top: 35vh;
+    font-size: 30px;
+    border-bottom: 2px solid white;
+}
+
+.welcome-content p{
+  color: #402218;
+  text-shadow: 5px 5px 10px white;
+}
+
+.welcome-content h1{
+    color: #362222;
+    text-shadow: 5px 5px 10px white;
+}
+
+.btn-down {
+    width: 20%;
+    height: 5vh;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+    background: #362222;
+    border:none;
+    outline:none;
+    color: white;
+}
+
+.btn-down:hover {
+    font-size: 20px;
+    transition: 0.8s;
+    background: white;
+    border:5px solid #362222;
+    outline:none;
+    color: #362222;
+}
+
+.btn-down p{
+    font-size: 20px;  
+}
+
+body {
+    background: #FDFAF6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-form {
+    width: 500px;
+    height: 43vh;
+    margin: 20px;
+    background: #E6DDC6;
+    border: 2px solid #362222;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-header{
+    font-size: 30px;
+    padding: 5px;
+    border-bottom: 3px solid #362222;
+}
+
+.form-body {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.input-title, .input-year, .input-author{
+    width: 98%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-title label, .input-year label, .input-author label{
+    font-size: 20px;
+}
+.input-title input, .input-year input, .input-author input{
+    width: 70%;
+    height: 5vh;
+    border-radius: 5px;
+    border: 3px solid #362222 ;
+    padding: 5px;
+}
+
+.btn-submit{
+    margin-top:10px ;
+    width: 25%;
+    height: 6vh;
+    border-radius: 5px;
+    border: 2px solid #362222;
+    background: white;
+    font-size: 20px;
+}
+
+.btn-submit:hover {
+    color: white;
+    transition: 0.7s;
+    border: 2px double white;
+    background: #362222;
+    font-size: 16px;
+}
+
+content{
+    margin-right: 20px;
+}
+
+.description{
+    width: 980px;
+    height: 7vh;
+    margin: auto;
+    background: #E6DDC6;
+    border: 3px solid #362222;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.info {
+    margin: 5px auto;
+}
+
+.main-content{
+    width: 980px;
+    height: fit-content;
+    margin: 5px auto;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content h2 {
+    border-bottom: 3px solid #362222;
+}
+
+.container{
+    width: 49%;
+    /*background: #E6DDC6;
+    border: 2px solid #362222;
+    border-radius: 10px;*/
+    text-align: center;
+}
+
+.container .satu{
+    float: left;
+}
+
+.container .dua{
+    float: right;
+}
+
+/*.container-header {
+    background: #E6DDC6;
+    border: 2px solid #362222;
+}*/
+
+footer {
+       padding: 15px;
+       color: white;
+       background-color: #766161;
+       text-align: center;
+    }
+
+footer img {
+       width: 2em;
+       margin : 1em;
+}
+
+.list-item{
+    margin: 5px;
+    background: #E6DDC6;
+    border: 2px solid #362222;
+    border-radius: 10px;
+}
+
+.inner{
+    text-align: left;
+}
+
+.inner h2{
+    font-size: 18px;
+    border-bottom: none;
+}
+
+.modal{
+    display: none;
+}
+
+.item{
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-button {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+
+.check-button:hover {
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+}
+
+.undo-button{
+    background: url('../assets/undo-solid.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-outline.svg');
+    background-size: contain;
+}
+
+.trash-button{
+    background: url('../assets/trash-solid.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+}
+
+@media screen and (max-width: 1000px) {
+
+    main{
+        display: block;
+    }
+
+    .main-content{
+    width: 400px;
+    height: fit-content;
+    margin: 20px auto;
+    padding-bottom: 50px;
+    display: block;
+}
+
+.input-form {
+    margin: 20px auto;
+    width: 400px;
+    height: 40vh;
+    text-align: center;
+}
+
+.input-form h5{
+    margin-top: 20px;
+}
+
+.input-title, .input-year, .input-author{
+    width: 90%;
+}
+
+.input-title label, .input-year label, .input-author label{
+    font-size: 15px;
+}
+.input-title input, .input-year input, .input-author input{
+    width: 50%;
+    height: 4vh;
+    border-radius: 4px;
+    border: 2px solid #362222 ;
+}
+
+.input-status{
+    width: 70%;
+    margin :10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #362222;
+}
+
+.description{
+    width: 400px;
+    height: 10vh;
+    text-align: center;
+}
+
+.info p{
+    font-size: 22px;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+}
